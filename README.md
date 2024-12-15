@@ -11,6 +11,7 @@ This script automates the setup of unattended upgrades on **Debian** systems. It
   - Security updates
   - Stable updates
   - Backports (optional)
+- Modifies configuration files to customize update behavior.
 - Performs a dry-run to validate the setup.
 
 ---
@@ -27,8 +28,8 @@ This script automates the setup of unattended upgrades on **Debian** systems. It
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/<your-repository-name>.git
-   cd <your-repository-name>
+   git clone https://github.com/dkingcyber/Enable-Auto-Updates-Debian.git
+   cd Enable-Auto-Updates-Debian
 
 2. Make the script executable:
    ```bash
@@ -37,3 +38,7 @@ This script automates the setup of unattended upgrades on **Debian** systems. It
 3. Run the script:
    ```bash
    sudo ./autoupdate.sh
+
+## Configuration Files Edited
+/etc/apt/apt.conf.d/50unattended-upgrades: Key lines are uncommented to enable updates for stable and security repositories.
+/etc/apt/apt.conf.d/20auto-upgrades: The default content is replaced with new settings for automated updates.
