@@ -40,5 +40,5 @@ This script automates the setup of unattended upgrades on **Debian** systems. It
    sudo ./autoupdate.sh
 
 ## Configuration Files Edited
-/etc/apt/apt.conf.d/50unattended-upgrades: Key lines are uncommented to enable updates for stable and security repositories.
-/etc/apt/apt.conf.d/20auto-upgrades: The default content is replaced with new settings for automated updates.
+- /etc/apt/apt.conf.d/50unattended-upgrades: Key lines are uncommented to enable updates for stable and security repositories.
+- /etc/apt/apt.conf.d/20auto-upgrades: The default content is replaced with new settings for automated updates.
