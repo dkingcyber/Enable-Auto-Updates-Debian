@@ -33,7 +33,7 @@ This script automates the setup of unattended upgrades on **Debian** systems. It
 
 2. Make the script executable:
    ```bash
-   chmod +x autoupdate.sh
+   chmod +x autoupdates.sh
 
 3. Run the script:
    ```bash
